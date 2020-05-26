@@ -1,0 +1,12 @@
+.menu {
+	display: flex;
+	&__item {
+		list-style-type: none;
+		& + & {
+			margin-left: 68px;
+		}
+	}
+	&__link {
+		text-decoration: none;
+	}
+}

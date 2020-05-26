@@ -1,0 +1,11 @@
+.logo {
+	display: flex;
+	&__title {
+		margin-left: 30px;
+		font-size: 36px;
+		line-height: 50px;
+		font-weight: 900;
+		font-family: "Merriweather", sans-serif;
+		color: #005fa3;
+	}
+}
