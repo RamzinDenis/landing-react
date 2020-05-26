@@ -1,8 +1,16 @@
 .header__info__item {
+	display: flex;
+	align-items: flex-start;
+	height: fit-content;
+	margin-bottom: 22px;
 }
 
 .header__info__text {
+	font-size: 13px;
+	height: auto;
 }
 
 .header__info__icon {
+	height: fit-content;
+	margin-right: 15px;
 }

@@ -4,11 +4,11 @@ import { navbarData, BASE_URL } from "../../fixtures";
 
 const NavBar = () => {
 	return (
-		<nav>
-			<ul className={styles.menu}>
+		<nav className={styles.nav}>
+			<ul className={styles.nav__menu}>
 				{navbarData.map((item, index) => (
-					<li key={index} className={styles.menu__item}>
-						<a href={`${BASE_URL}`} className={styles.menu__link}>
+					<li key={index} className={styles.nav__menu__item}>
+						<a href={`${BASE_URL}`} className={styles.nav__menu__link}>
 							{item}
 						</a>
 					</li>

@@ -1,9 +1,15 @@
 .header {
 	width: 100%;
 	max-width: 1110px;
-	display: flex;
-	justify-content: space-between;
+
 	height: 100px;
-	align-items: center;
+
 	margin: 0 auto;
+	&__container {
+		margin-top: 22px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 57px;
+	}
 }

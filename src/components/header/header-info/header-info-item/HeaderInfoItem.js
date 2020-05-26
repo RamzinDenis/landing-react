@@ -1,19 +1,19 @@
 import React from "react";
-import PropsTypes from "propTypes";
+import PropTypes from "prop-types";
 import styles from "./header-info-item.module.scss";
 
 const HeaderInfoItem = ({ text, children }) => {
 	return (
 		<div className={styles.header__info__item}>
-			<span className={styles.header__info__text}>{text}</span>
 			<span className={styles.header__info__icon}>{children}</span>
+			<span className={styles.header__info__text}>{text}</span>
 		</div>
 	);
 };
 
 HeaderInfoItem.propTypes = {
-	text: PropsTypes.string.isRequired,
-	children: PropsTypes.element.isRequired,
+	text: PropTypes.string.isRequired,
+	children: PropTypes.element.isRequired,
 };
 
 export default HeaderInfoItem;
