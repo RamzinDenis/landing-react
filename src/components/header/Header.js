@@ -5,10 +5,10 @@ import Logo from "../logo";
 
 const Header = () => {
 	return (
-		<div className={styles.header}>
+		<header className={styles.header}>
 			<Logo />
 			<NavBar classN={styles.header__navbar} />
-		</div>
+		</header>
 	);
 };
 
