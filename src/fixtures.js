@@ -1,8 +1,8 @@
 import React from "react";
-import { ReactComponent as Phone } from "./asserts/svg/phone.svg";
-import { ReactComponent as Clock } from "./asserts/svg/clock.svg";
-import { ReactComponent as Envelope } from "./asserts/svg/envelope.svg";
-import { ReactComponent as Geo } from "./asserts/svg/geo.svg";
+import { ReactComponent as Phone } from "./assets/svg/phone.svg";
+import { ReactComponent as Clock } from "./assets/svg/clock.svg";
+import { ReactComponent as Envelope } from "./assets/svg/envelope.svg";
+import { ReactComponent as Geo } from "./assets/svg/geo.svg";
 
 export const navbarData = [
 	"Главная",
