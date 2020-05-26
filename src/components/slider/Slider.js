@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./slider.module.scss";
 import PropTypes from "prop-types";
-import ArrowBox from "../arrows-container";
+import ArrowContainer from "../arrows-container";
+import Dots from "../dots";
 
 const Slider = ({ children, backgroundUrl, height, Shadow }) => {
 	return (
@@ -12,7 +13,8 @@ const Slider = ({ children, backgroundUrl, height, Shadow }) => {
 			<div className={styles.slider__shadow}></div>
 			<div className={styles.slider__container}>
 				{children}
-				<ArrowBox />
+				<ArrowContainer />
+				<Dots />
 			</div>
 		</div>
 	);

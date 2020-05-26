@@ -1,0 +1,16 @@
+.dots {
+	position: absolute;
+	bottom: 16.9%;
+	left: 0px;
+	display: flex;
+	z-index: 3;
+	&__item {
+		margin-right: 40px;
+		width: 10px;
+		height: 10px;
+		background-color: #fff;
+		opacity: 0.4;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+}
