@@ -2,7 +2,14 @@ import React from "react";
 import styles from "./section.module.scss";
 import PropTypes from "prop-types";
 
-const Main = ({ isGreyBg, height, backgroundUrl, shadow, children }) => {
+const Main = ({
+	isGreyBg,
+	height,
+	backgroundUrl,
+	shadow,
+	children,
+	shadowOpacity,
+}) => {
 	const sectionClassess = isGreyBg
 		? `${styles.main} ${styles.main_grey}`
 		: `${styles.main}`;
@@ -11,7 +18,12 @@ const Main = ({ isGreyBg, height, backgroundUrl, shadow, children }) => {
 			className={sectionClassess}
 			style={{ backgroundImage: `url(${backgroundUrl})`, height: height }}
 		>
-			{shadow && <div className={styles.main__shadow}></div>}
+			{shadow && (
+				<div
+					className={styles.main__shadow}
+					style={{ backgroundColor: `rgba(0, 0, 0, ${shadowOpacity})` }}
+				></div>
+			)}
 
 			<div className={styles.main__container}>{children}</div>
 		</section>
@@ -24,6 +36,7 @@ Main.propTypes = {
 	height: PropTypes.string.isRequired,
 	shadow: PropTypes.bool,
 	children: PropTypes.element.isRequired,
+	shadowOpacity: PropTypes.number,
 };
 
 export default Main;
