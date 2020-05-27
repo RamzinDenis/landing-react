@@ -1,28 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./arrow.module.scss";
 import { Consumer } from "../../../Context";
+import ArrowContainer from "./ArrowContainer";
+import styles from "./arrow.module.scss";
 
-const Arrow = ({ isRight }) => {
-	const iconClassNames = isRight
-		? `${styles.arrow__icon} ${styles.right}`
-		: `${styles.arrow__icon} ${styles.left}`;
-
-	const bgClassNames = isRight
-		? `${styles.arrow__bg}`
-		: `${styles.arrow__bg} ${styles.arrow__bg_left}`;
-
-	const handleArrowClick = value =>
-		value.setCurrentItem((prevState, props) => ({
-			currentItem: isRight
-				? prevState.currentItem >= value.maxLength - 1
-					? 0
-					: prevState.currentItem + 1
-				: prevState.currentItem <= 0
-				? value.maxLength - 1
-				: prevState.currentItem - 1,
-		}));
-
+const Arrow = ({ isRight, handleArrowClick, bgClassNames, iconClassNames }) => {
 	return (
 		<div className={styles.arrow}>
 			<Consumer>
@@ -40,6 +22,9 @@ const Arrow = ({ isRight }) => {
 
 Arrow.propTypes = {
 	isRight: PropTypes.bool,
+	handleArrowClick: PropTypes.func.isRequired,
+	bgClassNames: PropTypes.string.isRequired,
+	iconClassNames: PropTypes.string.isRequired,
 };
 
-export default Arrow;
+export default ArrowContainer(Arrow);
