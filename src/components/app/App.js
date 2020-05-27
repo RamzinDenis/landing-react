@@ -3,8 +3,10 @@ import Header from "../header";
 import Section from "../main";
 import Slider from "../slider";
 import HomePageContent from "../slider/slider-content";
-import { homepageSliderContentData } from "../../fixtures";
+import GridSection from "../grid-section";
+
 import url from "../../assets/images/home.png";
+import { homepageSliderContentData } from "../../fixtures";
 
 const App = () => {
 	return (
@@ -17,7 +19,9 @@ const App = () => {
 					))}
 				</Slider>
 			</Section>
-			<Section isGreyBg height={"128.5vh"}></Section>
+			<Section isGreyBg height={"128.5vh"}>
+				<GridSection />
+			</Section>
 		</>
 	);
 };
