@@ -3,6 +3,10 @@ import { ReactComponent as Phone } from "./assets/svg/phone.svg";
 import { ReactComponent as Clock } from "./assets/svg/clock.svg";
 import { ReactComponent as Envelope } from "./assets/svg/envelope.svg";
 import { ReactComponent as Geo } from "./assets/svg/geo.svg";
+import microsoftSrc from "./assets/images/microsoft.png";
+import facebookSrc from "./assets/images/facebook.png";
+import googleSrc from "./assets/images/google.png";
+import vkSrc from "./assets/images/vk.png";
 
 export const navbarData = [
 	"Главная",
@@ -56,6 +60,27 @@ export const homepageSliderContentData = [
 	{
 		text: "Контакты",
 		title: "Узнайте как с нами связаться",
+		id: 3,
+	},
+];
+
+export const clientsSectionContentData = [
+	{
+		src: microsoftSrc,
+		id: 0,
+	},
+	{
+		src: facebookSrc,
+		id: 1,
+	},
+
+	{
+		src: googleSrc,
+		id: 2,
+	},
+
+	{
+		src: vkSrc,
 		id: 3,
 	},
 ];

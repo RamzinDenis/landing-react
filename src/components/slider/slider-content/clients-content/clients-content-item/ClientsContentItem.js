@@ -2,16 +2,16 @@ import React from "react";
 import styles from "./clients-content-item.module.scss";
 import PropTypes from "prop-types";
 
-const ClientsContentItem = imgSrc => {
+const ClientsContentItem = ({ src }) => {
 	return (
 		<div className={styles.item}>
-			<img className={styles.img} src={imgSrc} alt="Company Name" />
+			<img className={styles.img} src={src} alt="Partners" />
 		</div>
 	);
 };
 
-ClientsContent.propTypes = {
-	imgSrc: PropTypes.string.isRequired,
+ClientsContentItem.propTypes = {
+	src: PropTypes.string.isRequired,
 };
 
 export default ClientsContentItem;

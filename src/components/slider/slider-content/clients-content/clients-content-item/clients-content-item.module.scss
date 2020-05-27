@@ -1,9 +1,23 @@
 .item {
 	width: 255px;
 	height: 130px;
+	animation: fade-in 1s linear;
+	& + & {
+		margin-left: 30px;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .img {
-	width: 100%;
+	width: 255px;
 	height: auto;
+	max-height: 130px;
 }
