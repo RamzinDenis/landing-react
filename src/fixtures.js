@@ -155,7 +155,7 @@ export const inputData = [
 	},
 	{
 		text: "Сообщение",
-		placeholder: "Введите ваше сообщение",
+		placeholder: "Ваше сообщение",
 		id: 2,
 	},
 ];

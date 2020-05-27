@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./contact-info.module.scss";
 import IconItem from "../icon-item/IconItem";
 import { contactInfoIconsData, inputData } from "../../fixtures";
-import Input from "../input";
+import Form from "../form";
 
 const ContactInfo = () => {
 	return (
@@ -18,19 +18,7 @@ const ContactInfo = () => {
 					))}
 				</div>
 			</div>
-			<form className={styles.form}>
-				<div className={styles.form__name}>
-					{inputData
-						.filter((_, index) => index < 2)
-						.map(item => (
-							<Input
-								key={item.id}
-								placeholder={item.placeholder}
-								text={item.text}
-							/>
-						))}
-				</div>
-			</form>
+			<Form data={inputData} />
 		</div>
 	);
 };

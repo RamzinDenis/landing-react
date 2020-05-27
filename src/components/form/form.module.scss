@@ -1,0 +1,25 @@
+.form {
+	flex-basis: 45%;
+	&__name {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		label {
+			flex-basis: 45%;
+			margin-bottom: 130px;
+		}
+	}
+	&__main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+}
+
+.button__wrapper {
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+	justify-content: flex-end;
+}
