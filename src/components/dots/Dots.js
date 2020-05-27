@@ -1,8 +1,9 @@
 import React, { Children } from "react";
 import styles from "./dots.module.scss";
 import { Consumer } from "../../Context";
+import 
 
-const Dots = () => {
+const Dots = ({blue}) => {
 	const handleDotClick = (value, index) =>
 		value.setCurrentItem({ currentItem: index });
 	return (
@@ -25,5 +26,6 @@ const Dots = () => {
 		</div>
 	);
 };
+
 
 export default Dots;

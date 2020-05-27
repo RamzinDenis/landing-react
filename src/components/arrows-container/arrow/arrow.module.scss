@@ -5,7 +5,6 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	cursor: pointer;
 
 	&__bg {
@@ -17,8 +16,14 @@
 		background-color: #ffffff;
 		opacity: 0.4;
 	}
+
+	&__blue {
+		background-color: #005fa3;
+		opacity: 1;
+	}
 	&__bg_left {
 		opacity: 0.2;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	}
 }
 

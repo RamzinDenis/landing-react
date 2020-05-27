@@ -3,14 +3,16 @@ import styles from "./arrow.module.scss";
 
 export default function (WrappedComponent) {
 	const HocComponent = props => {
-		const { isRight } = props;
-		const iconClassNames = isRight
+		const { isRight, blue } = props;
+		let iconClassNames = isRight
 			? `${styles.arrow__icon} ${styles.right}`
 			: `${styles.arrow__icon} ${styles.left}`;
 
-		const bgClassNames = isRight
+		let bgClassNames = isRight
 			? `${styles.arrow__bg}`
 			: `${styles.arrow__bg} ${styles.arrow__bg_left}`;
+
+		bgClassNames += blue ? ` ${styles.arrow__blue}` : "";
 
 		const handleArrowClick = value =>
 			value.setCurrentItem((prevState, props) => ({

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Consumer } from "../../../Context";
-import ArrowContainer from "./ArrowContainer";
+import ArrowHoc from "./ArrowHoc";
 import styles from "./arrow.module.scss";
 
 const Arrow = ({ isRight, handleArrowClick, bgClassNames, iconClassNames }) => {
@@ -27,4 +27,4 @@ Arrow.propTypes = {
 	iconClassNames: PropTypes.string.isRequired,
 };
 
-export default ArrowContainer(Arrow);
+export default ArrowHoc(Arrow);

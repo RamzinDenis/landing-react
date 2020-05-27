@@ -6,8 +6,8 @@ import Arrow from "./arrow";
 const ArrowContainer = ({ white, blue }) => {
 	return (
 		<div className={styles.arrow_container}>
-			<Arrow />
-			<Arrow isRight />
+			<Arrow blue={blue} />
+			<Arrow isRight blue={blue} />
 		</div>
 	);
 };

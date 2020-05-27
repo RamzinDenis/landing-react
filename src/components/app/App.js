@@ -5,6 +5,7 @@ import Slider from "../slider";
 import HomePageContent from "../slider/slider-content";
 import ServicesSection from "../services-section";
 import AboutUs from "../about-us";
+import Clients from "../clients";
 
 import url from "../../assets/images/home.png";
 import { homepageSliderContentData } from "../../fixtures";
@@ -29,7 +30,8 @@ const App = () => {
 				<AboutUs />
 			</Section>
 			<Section isGreyBg height={"630px"}>
-				<Slider></Slider>
+				<Clients />
+				<Slider blue></Slider>
 			</Section>
 		</>
 	);

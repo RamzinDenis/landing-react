@@ -10,21 +10,19 @@ class Slider extends React.Component {
 		currentItem: 0,
 	};
 	render() {
-		const { children, maxLength } = this.props;
+		const { children, maxLength, blue } = this.props;
 		return (
-			<div className={styles.slider__container}>
-				<Provider
-					value={{
-						currentItem: this.state.currentItem,
-						setCurrentItem: this.setState.bind(this),
-						maxLength,
-					}}
-				>
-					{children}
-					<ArrowContainer />
-					<Dots />
-				</Provider>
-			</div>
+			<Provider
+				value={{
+					currentItem: this.state.currentItem,
+					setCurrentItem: this.setState.bind(this),
+					maxLength,
+				}}
+			>
+				{children}
+				<ArrowContainer blue={blue} />
+				<Dots />
+			</Provider>
 		);
 	}
 }
@@ -36,6 +34,7 @@ Slider.defaultProps = {
 Slider.propTypes = {
 	children: PropTypes.arrayOf(PropTypes.element).isRequired,
 	maxLength: PropTypes.number.isRequired,
+	blue: PropTypes.bool,
 };
 
 export default Slider;
