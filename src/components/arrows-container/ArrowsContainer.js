@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./arrows-container.module.scss";
 import Arrow from "./arrow";
 
-const ArrowContainer = ({ blue, margin }) => {
+const ArrowContainer = ({ blue }) => {
 	return (
 		<div className={styles.arrow_container}>
 			<Arrow blue={blue} />
@@ -12,19 +12,9 @@ const ArrowContainer = ({ blue, margin }) => {
 	);
 };
 
-const requiredPropsCheck = (props, propName, componentName) => {
-	if (!props.white && !props.blue) {
-		return new Error(
-			`One of 'white' or 'blue' is required by '${componentName}' component.`
-		);
-	}
-};
-
 ArrowContainer.propTypes = {
-	white: requiredPropsCheck,
-	blue: requiredPropsCheck,
+	blue: PropTypes.bool,
 	isRight: PropTypes.bool,
-	margin: PropTypes.bool,
 };
 
 export default ArrowContainer;

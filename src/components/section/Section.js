@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./section.module.scss";
 import PropTypes from "prop-types";
 
-const Main = ({
+const Section = ({
 	isGreyBg,
 	height,
 	backgroundUrl,
@@ -30,13 +30,16 @@ const Main = ({
 	);
 };
 
-Main.propTypes = {
+Section.propTypes = {
 	isGreyBg: PropTypes.bool,
 	backgroundUrl: PropTypes.string,
 	height: PropTypes.string.isRequired,
 	shadow: PropTypes.bool,
-	children: PropTypes.element.isRequired,
+	children: PropTypes.oneOfType([
+		PropTypes.element,
+		PropTypes.arrayOf(PropTypes.element),
+	]).isRequired,
 	shadowOpacity: PropTypes.number,
 };
 
-export default Main;
+export default Section;

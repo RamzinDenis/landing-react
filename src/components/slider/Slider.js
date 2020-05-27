@@ -40,7 +40,7 @@ Slider.propTypes = {
 	children: PropTypes.arrayOf(PropTypes.element).isRequired,
 	maxLength: PropTypes.number.isRequired,
 	blue: PropTypes.bool,
-	marginBottom: PropTypes.bool,
+	marginBottom: PropTypes.number.isRequired,
 };
 
 export default Slider;

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../header";
-import Section from "../main";
+import Section from "../section";
 import Slider from "../slider";
 import {
 	HomePageContent,
