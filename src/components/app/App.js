@@ -4,6 +4,7 @@ import Section from "../main";
 import Slider from "../slider";
 import HomePageContent from "../slider/slider-content";
 import ServicesSection from "../services-section";
+import AboutUs from "../about-us";
 
 import url from "../../assets/images/home.png";
 import { homepageSliderContentData } from "../../fixtures";
@@ -24,7 +25,9 @@ const App = () => {
 			<Section isGreyBg height={"128.5vh"}>
 				<ServicesSection />
 			</Section>
-			<Section height={"90vh"}></Section>
+			<Section height={"90vh"}>
+				<AboutUs />
+			</Section>
 		</>
 	);
 };
