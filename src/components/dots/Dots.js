@@ -1,11 +1,15 @@
 import React, { Children } from "react";
 import styles from "./dots.module.scss";
 import { Consumer } from "../../Context";
-import 
+import PropTypes from "prop-types";
 
-const Dots = ({blue}) => {
+const Dots = ({ blue }) => {
 	const handleDotClick = (value, index) =>
 		value.setCurrentItem({ currentItem: index });
+
+	const dotsNames = blue
+		? `${styles.dots__item} ${styles.dots__item_blue}`
+		: `${styles.dots__item} `;
 	return (
 		<div className={styles.dots}>
 			<Consumer>
@@ -13,7 +17,7 @@ const Dots = ({blue}) => {
 					Children.toArray(
 						[...Array(4)].map((item, index) => (
 							<div
-								className={styles.dots__item}
+								className={dotsNames}
 								style={{
 									opacity: index === value.currentItem ? "1" : "0.4",
 								}}
@@ -27,5 +31,8 @@ const Dots = ({blue}) => {
 	);
 };
 
+Dots.propTypes = {
+	blue: PropTypes.bool,
+};
 
 export default Dots;

@@ -21,7 +21,7 @@ class Slider extends React.Component {
 			>
 				{children}
 				<ArrowContainer blue={blue} />
-				<Dots />
+				<Dots blue={blue} />
 			</Provider>
 		);
 	}

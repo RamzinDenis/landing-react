@@ -6,17 +6,14 @@ import styles from "./arrow.module.scss";
 
 const Arrow = ({ isRight, handleArrowClick, bgClassNames, iconClassNames }) => {
 	return (
-		<div className={styles.arrow}>
-			<Consumer>
-				{value => (
-					<div
-						className={bgClassNames}
-						onClick={() => handleArrowClick(value)}
-					></div>
-				)}
-			</Consumer>
-			<i className={iconClassNames}></i>
-		</div>
+		<Consumer>
+			{value => (
+				<div className={styles.arrow} onClick={() => handleArrowClick(value)}>
+					<div className={bgClassNames}></div>
+					<i className={iconClassNames}></i>
+				</div>
+			)}
+		</Consumer>
 	);
 };
 
