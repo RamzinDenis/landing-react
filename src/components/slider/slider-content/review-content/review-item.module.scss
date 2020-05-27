@@ -12,6 +12,9 @@
 		margin-bottom: 45px;
 		font-family: "Lato";
 	}
+	&__content {
+		animation: fade-in 1s linear;
+	}
 }
 
 .person {
@@ -34,5 +37,14 @@
 		font-size: 14px;
 		line-height: 19px;
 		font-weight: normal;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }

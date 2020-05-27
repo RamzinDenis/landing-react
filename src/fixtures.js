@@ -13,6 +13,9 @@ import malePersonSrc from "./assets/images/person4.png";
 import femalePersonSrc from "./assets/images/person2.png";
 import anotherFemalePersonSrc from "./assets/images/person3.png";
 
+import { ReactComponent as EnvelopeWhite } from "./assets/svg/envelopeW.svg";
+import { ReactComponent as PhoneWhite } from "./assets/svg/phoneW.svg";
+
 export const navbarData = [
 	"Главная",
 	"Услуги",
@@ -123,5 +126,36 @@ export const reviewsSectionContentData = [
 			"Platea dictumst quisque sagittis purus sit. Vel pharetra vel turpis nunc. Gravida dictum fusce ut placerat. Enim diam vulputate ut pharetra sit. Feugiat in uis ultricies lacus sed turpis tincidunt id. Rhoncus mattis rhoncus urna neque viverra justo nec  Rhoncus mattis rhoncus urna neque viverra justo nec. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Euismod in pellentesque massa placerat dui  .",
 		role: `Администратор ООП "Класс"`,
 		name: "Анна Михлина",
+	},
+];
+
+export const contactInfoIconsData = [
+	{
+		text: "+7 (111) 222-33-44",
+		id: 1,
+		children: <PhoneWhite />,
+	},
+	{
+		text: "order@bu-one.ru",
+		id: 2,
+		children: <EnvelopeWhite />,
+	},
+];
+
+export const inputData = [
+	{
+		text: "Имя",
+		placeholder: "Иван",
+		id: 0,
+	},
+	{
+		text: "Фамилия",
+		placeholder: "Иванов",
+		id: 1,
+	},
+	{
+		text: "Сообщение",
+		placeholder: "Введите ваше сообщение",
+		id: 2,
 	},
 ];

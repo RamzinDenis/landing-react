@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./header-info-item.module.scss";
+import styles from "./icon-item.module.scss";
 
-const HeaderInfoItem = ({ text, children }) => {
+const IconItem = ({ text, children, isWhiteTheme }) => {
 	return (
 		<div className={styles.header__item}>
 			<span className={styles.header__icon}>{children}</span>
@@ -11,9 +11,10 @@ const HeaderInfoItem = ({ text, children }) => {
 	);
 };
 
-HeaderInfoItem.propTypes = {
+IconItem.propTypes = {
 	text: PropTypes.string.isRequired,
 	children: PropTypes.element.isRequired,
+	isWhiteTheme: PropTypes.bool,
 };
 
-export default HeaderInfoItem;
+export default IconItem;

@@ -1,0 +1,32 @@
+.contact {
+	display: flex;
+	padding-top: 122px;
+	color: white;
+	z-index: -2;
+	&__info {
+		flex-basis: 42%;
+	}
+	&__text {
+		margin-bottom: 80px;
+		margin-top: 60px;
+		font-weight: 300;
+		font-family: "Lato";
+		font-size: 18px;
+		line-height: 25px;
+		width: 87%;
+		color: #c4c4c4;
+	}
+	&__title {
+		font-weight: 900;
+		font-size: 48px;
+		font-family: "Merriweather";
+	}
+	&__icons {
+		display: flex;
+		color: #c4c4c4;
+		justify-content: space-between;
+		span {
+			font-size: 21px;
+		}
+	}
+}
