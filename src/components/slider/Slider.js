@@ -34,7 +34,7 @@ Slider.defaultProps = {
 };
 
 Slider.propTypes = {
-	children: PropTypes.element.isRequired,
+	children: PropTypes.arrayOf(PropTypes.element).isRequired,
 	maxLength: PropTypes.number.isRequired,
 };
 

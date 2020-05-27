@@ -2,14 +2,7 @@ import React from "react";
 import styles from "./section.module.scss";
 import PropTypes from "prop-types";
 
-const Main = ({
-	isGreyBg,
-	height,
-	backgroundUrl,
-	shadow,
-	children,
-	padding,
-}) => {
+const Main = ({ isGreyBg, height, backgroundUrl, shadow, children }) => {
 	const sectionClassess = isGreyBg
 		? `${styles.main} ${styles.main_grey}`
 		: `${styles.main}`;
@@ -27,11 +20,10 @@ const Main = ({
 
 Main.propTypes = {
 	isGreyBg: PropTypes.bool,
-	backgroundUrl: PropTypes.string.isRequired,
+	backgroundUrl: PropTypes.string,
 	height: PropTypes.string.isRequired,
 	shadow: PropTypes.bool,
 	children: PropTypes.element.isRequired,
-	padding: PropTypes.string.isRequired,
 };
 
 export default Main;
