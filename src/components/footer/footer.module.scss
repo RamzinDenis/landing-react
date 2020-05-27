@@ -1,0 +1,16 @@
+.footer {
+	height: 100px;
+	&_text {
+		font-size: 14px;
+		line-height: 19px;
+		font-family: "Lato";
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1110px;
+		margin: 0 auto;
+		height: 100%;
+	}
+}

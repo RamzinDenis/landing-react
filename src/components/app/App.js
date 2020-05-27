@@ -10,6 +10,8 @@ import {
 import ServicesSection from "../services-section";
 import AboutUs from "../about-us";
 import SliderHeader from "../slider-header";
+import ContactInfo from "../contact-info";
+import Footer from "../footer";
 
 import url from "../../assets/images/home.png";
 import {
@@ -17,8 +19,6 @@ import {
 	clientsSectionContentData,
 	reviewsSectionContentData,
 } from "../../fixtures";
-
-import ContactInfo from "../contact-info";
 
 const App = () => {
 	const homepageSliderContent = homepageSliderContentData.map(
@@ -71,6 +71,7 @@ const App = () => {
 			<Section height={"623px"} backgroundUrl={url} shadow shadowOpacity={0.8}>
 				<ContactInfo />
 			</Section>
+			<Footer />
 		</>
 	);
 };
