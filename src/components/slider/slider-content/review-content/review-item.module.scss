@@ -1,0 +1,38 @@
+.item {
+	width: 100%;
+	background-color: #ebebeb;
+	height: 320px;
+	&__content {
+		padding: 45px 95px;
+	}
+	&__text {
+		font-weight: 300;
+		line-height: 25px;
+		font-size: 18px;
+		margin-bottom: 45px;
+		font-family: "Lato";
+	}
+}
+
+.person {
+	display: flex;
+	&__image {
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
+		margin-right: 35px;
+	}
+	&__name {
+		margin-bottom: 5px;
+		margin-top: 10px;
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: 900;
+	}
+	&__role {
+		color: #4f4f4f;
+		font-size: 14px;
+		line-height: 19px;
+		font-weight: normal;
+	}
+}

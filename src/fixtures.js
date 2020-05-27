@@ -8,6 +8,11 @@ import facebookSrc from "./assets/images/facebook.png";
 import googleSrc from "./assets/images/google.png";
 import vkSrc from "./assets/images/vk.png";
 
+import defaultPersonSrc from "./assets/images/person1.png";
+import malePersonSrc from "./assets/images/person4.png";
+import femalePersonSrc from "./assets/images/person2.png";
+import anotherFemalePersonSrc from "./assets/images/person3.png";
+
 export const navbarData = [
 	"Главная",
 	"Услуги",
@@ -82,5 +87,41 @@ export const clientsSectionContentData = [
 	{
 		src: vkSrc,
 		id: 3,
+	},
+];
+
+export const reviewsSectionContentData = [
+	{
+		src: defaultPersonSrc,
+		id: 0,
+		text: `Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.`,
+		name: "Екатерина Иванова",
+		role: `Директор ООО "Раз два" `,
+	},
+	{
+		src: malePersonSrc,
+		id: 1,
+		text:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.",
+		name: "Иван Дейко",
+		role: `Директор ООО "Южный Шельф"`,
+	},
+
+	{
+		src: femalePersonSrc,
+		id: 2,
+		text:
+			"Urna cursus eget nunc scelerisque. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id. Rhoncus mattis rhoncus urna neque viverra justo nec. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Euismod in pellentesque massa placerat duis. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Donec ultrices tincidunt arcu non sodales.",
+		role: `Директор ООО "Три Четыре"`,
+		name: "Айше Тахтарова",
+	},
+
+	{
+		src: anotherFemalePersonSrc,
+		id: 3,
+		text:
+			"Platea dictumst quisque sagittis purus sit. Vel pharetra vel turpis nunc. Gravida dictum fusce ut placerat. Enim diam vulputate ut pharetra sit. Feugiat in uis ultricies lacus sed turpis tincidunt id. Rhoncus mattis rhoncus urna neque viverra justo nec  Rhoncus mattis rhoncus urna neque viverra justo nec. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Euismod in pellentesque massa placerat dui  .",
+		role: `Администратор ООП "Класс"`,
+		name: "Анна Михлина",
 	},
 ];
