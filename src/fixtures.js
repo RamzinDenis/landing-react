@@ -36,3 +36,26 @@ export const headerInfoData = [
 		children: <Geo />,
 	},
 ];
+
+export const homepageSliderContentData = [
+	{
+		text: "Наша презентация",
+		title: "Бухгалтерские услуги в Санкт-Петербурге",
+		id: 0,
+	},
+	{
+		text: "Наши услуги",
+		title: "Ознакомьтесь с нашими услугами",
+		id: 1,
+	},
+	{
+		text: "О компании",
+		title: "Узнайте о нас больше",
+		id: 2,
+	},
+	{
+		text: "Контакты",
+		title: "Узнайте как с нами связаться",
+		id: 3,
+	},
+];

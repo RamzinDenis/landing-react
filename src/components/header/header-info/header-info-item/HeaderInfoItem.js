@@ -4,9 +4,9 @@ import styles from "./header-info-item.module.scss";
 
 const HeaderInfoItem = ({ text, children }) => {
 	return (
-		<div className={styles.header__info__item}>
-			<span className={styles.header__info__icon}>{children}</span>
-			<span className={styles.header__info__text}>{text}</span>
+		<div className={styles.header__item}>
+			<span className={styles.header__icon}>{children}</span>
+			<span className={styles.header__text}>{text}</span>
 		</div>
 	);
 };

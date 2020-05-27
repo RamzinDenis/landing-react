@@ -3,27 +3,39 @@ import styles from "./slider.module.scss";
 import PropTypes from "prop-types";
 import ArrowContainer from "../arrows-container";
 import Dots from "../dots";
+import { Provider } from "../../Context";
 
-const Slider = ({ children, backgroundUrl, height, Shadow }) => {
-	return (
-		<div
-			className={styles.slider}
-			style={{ backgroundImage: `url(${backgroundUrl})`, height: height }}
-		>
-			<div className={styles.slider__shadow}></div>
+class Slider extends React.Component {
+	state = {
+		currentItem: 0,
+	};
+	render() {
+		const { children, maxLength } = this.props;
+		return (
 			<div className={styles.slider__container}>
-				{children}
-				<ArrowContainer />
-				<Dots />
+				<Provider
+					value={{
+						currentItem: this.state.currentItem,
+						setCurrentItem: this.setState.bind(this),
+						maxLength,
+					}}
+				>
+					{children}
+					<ArrowContainer />
+					<Dots />
+				</Provider>
 			</div>
-		</div>
-	);
+		);
+	}
+}
+
+Slider.defaultProps = {
+	maxLength: 4,
 };
 
 Slider.propTypes = {
 	children: PropTypes.element.isRequired,
-	backgroundUrl: PropTypes.string,
-	height: PropTypes.string.isRequired,
+	maxLength: PropTypes.number.isRequired,
 };
 
 export default Slider;

@@ -16,10 +16,9 @@
 		width: 100%;
 		background-color: #ffffff;
 		opacity: 0.4;
-		transition: opacity 0.2 linear;
-		&:hover {
-			opacity: 0.2;
-		}
+	}
+	&__bg_left {
+		opacity: 0.2;
 	}
 }
 
