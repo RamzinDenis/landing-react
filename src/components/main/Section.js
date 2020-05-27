@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./main.module.scss";
+import styles from "./section.module.scss";
 import PropTypes from "prop-types";
 
 const Main = ({
