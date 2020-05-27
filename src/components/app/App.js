@@ -18,6 +18,8 @@ import {
 	reviewsSectionContentData,
 } from "../../fixtures";
 
+import ContactInfo from "../contact-info";
+
 const App = () => {
 	const homepageSliderContent = homepageSliderContentData.map(
 		({ id, text, title }, index) => (
@@ -66,12 +68,9 @@ const App = () => {
 					{reviewsSectionContent}
 				</Slider>
 			</Section>
-			<Section
-				height={"623px"}
-				backgroundUrl={url}
-				shadow
-				shadowOpacity={0.8}
-			></Section>
+			<Section height={"623px"} backgroundUrl={url} shadow shadowOpacity={0.8}>
+				<ContactInfo />
+			</Section>
 		</>
 	);
 };
