@@ -1,0 +1,29 @@
+.about {
+	display: flex;
+	justify-content: space-between;
+	&__info {
+		flex-basis: 40%;
+	}
+	&__text {
+		margin-top: 60px;
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: 300;
+		font-family: "Lato";
+	}
+	&__container {
+		margin-top: 164px;
+		flex-basis: 50%;
+	}
+}
+
+.title {
+	font-family: "Merriweather", sans-serif;
+	font-size: 48px;
+	font-weight: 900;
+	margin-bottom: 60px;
+	line-height: 69px;
+}
+.title_extra {
+	color: #005fa3;
+}

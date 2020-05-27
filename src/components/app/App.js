@@ -28,6 +28,9 @@ const App = () => {
 			<Section height={"90vh"}>
 				<AboutUs />
 			</Section>
+			<Section isGreyBg height={"630px"}>
+				<Slider></Slider>
+			</Section>
 		</>
 	);
 };
