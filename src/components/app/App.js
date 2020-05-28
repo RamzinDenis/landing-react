@@ -62,13 +62,18 @@ const App = () => {
 					{clientSectionContent}
 				</Slider>
 			</Section>
-			<Section height={"897px"}>
+			<Section minHeight={"897px"}>
 				<SliderHeader subtitle="Отзывы" title="Ваши благодарности" />
 				<Slider blue marginBottom={130}>
 					{reviewsSectionContent}
 				</Slider>
 			</Section>
-			<Section height={"623px"} backgroundUrl={url} shadow shadowOpacity={0.8}>
+			<Section
+				minHeight={"623px"}
+				backgroundUrl={url}
+				shadow
+				shadowOpacity={0.8}
+			>
 				<ContactInfo />
 			</Section>
 			<Footer />

@@ -1,9 +1,10 @@
 .item {
 	width: 100%;
-	background-color: #ebebeb;
-	height: 320px;
+	min-height: 320px;
+	height: fit-content;
 	&__content {
 		padding: 45px 95px;
+		background-color: #ebebeb;
 	}
 	&__text {
 		font-weight: 300;
@@ -46,5 +47,14 @@
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.item__content {
+		padding: 20px;
+	}
+	.item {
+		padding-bottom: 250px;
 	}
 }
