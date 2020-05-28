@@ -31,3 +31,11 @@
 		}
 	}
 }
+
+@media screen and (max-width: 600px) {
+	.contact {
+		flex-direction: column;
+		gap: 40px;
+		padding-bottom: 20px;
+	}
+}
