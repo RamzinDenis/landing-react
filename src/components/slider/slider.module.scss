@@ -10,7 +10,12 @@
 @media screen and (max-width: 1110px) {
 	.icons_container {
 		box-sizing: border-box;
+		width: 95%;
 		margin-bottom: 50px;
+	}
+}
+@media screen and(max-width: 500px) {
+	.icons_container {
 		width: 90%;
 	}
 }

@@ -1,6 +1,7 @@
 .item {
-	width: 255px;
+	max-width: 255px;
 	height: 130px;
+	flex-shrink: 1;
 	animation: fade-in 1s linear;
 	& + & {
 		margin-left: 30px;
@@ -17,7 +18,9 @@
 }
 
 .img {
-	width: 255px;
+	max-width: 255px;
 	height: auto;
 	max-height: 130px;
+	min-height: 50px;
+	width: 100%;
 }
