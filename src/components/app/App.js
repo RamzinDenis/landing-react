@@ -46,10 +46,10 @@ const App = () => {
 			<Section backgroundUrl={url} height={"670px"} shadow>
 				<Slider marginBottom={113}>{homepageSliderContent}</Slider>
 			</Section>
-			<Section isGreyBg height={"fit-content"}>
+			<Section isGreyBg minHeight={"1242px"}>
 				<ServicesSection />
 			</Section>
-			<Section height={"844px"}>
+			<Section minHeight={"844px"}>
 				<AboutUs />
 			</Section>
 			<Section isGreyBg height={"630px"}>

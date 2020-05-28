@@ -4,11 +4,12 @@ import PropTypes from "prop-types";
 
 const Section = ({
 	isGreyBg,
-	height,
+	height = "fit-content",
 	backgroundUrl,
 	shadow,
 	children,
 	shadowOpacity,
+	minHeight,
 }) => {
 	const sectionClassess = isGreyBg
 		? `${styles.main} ${styles.main_grey}`
@@ -16,7 +17,11 @@ const Section = ({
 	return (
 		<section
 			className={sectionClassess}
-			style={{ backgroundImage: `url(${backgroundUrl})`, height: height }}
+			style={{
+				backgroundImage: `url(${backgroundUrl})`,
+				height: height,
+				minHeight: minHeight,
+			}}
 		>
 			{shadow && (
 				<div
@@ -33,13 +38,14 @@ const Section = ({
 Section.propTypes = {
 	isGreyBg: PropTypes.bool,
 	backgroundUrl: PropTypes.string,
-	height: PropTypes.string.isRequired,
+	height: PropTypes.string,
 	shadow: PropTypes.bool,
 	children: PropTypes.oneOfType([
 		PropTypes.element,
 		PropTypes.arrayOf(PropTypes.element),
 	]).isRequired,
 	shadowOpacity: PropTypes.number,
+	minHeight: PropTypes.string,
 };
 
 export default Section;

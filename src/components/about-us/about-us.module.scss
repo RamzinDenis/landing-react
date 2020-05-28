@@ -34,3 +34,18 @@
 		line-height: 34px;
 	}
 }
+
+@media screen and (max-width: 780px) {
+	.about {
+		flex-direction: column;
+		&__container {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	.about {
+		margin-bottom: 50px;
+	}
+}
