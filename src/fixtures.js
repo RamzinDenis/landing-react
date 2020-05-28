@@ -152,6 +152,7 @@ export const inputData = [
 		text: "Фамилия",
 		placeholder: "Иванов",
 		id: 1,
+		classN: "margin",
 	},
 	{
 		text: "Сообщение",

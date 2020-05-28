@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./input.module.scss";
+import PropTypes from "prop-types";
 
-const Input = ({ text, placeholder, type = "text", name }) => {
+const Input = ({ text, placeholder, type = "text", name, classN }) => {
 	const handleChange = () => null;
+	const labelNames = classN ? `${styles.label} + ${classN}` : `${styles.label}`;
+
 	return (
-		<label className={styles.label}>
+		<label className={labelNames}>
 			{text}
 			<input
 				type={type}
@@ -15,6 +18,13 @@ const Input = ({ text, placeholder, type = "text", name }) => {
 			/>
 		</label>
 	);
+};
+
+Input.propTypes = {
+	text: PropTypes.string.isRequired,
+	placeholder: PropTypes.string.isRequired,
+	type: PropTypes.string,
+	classN: PropTypes.string,
 };
 
 export default Input;

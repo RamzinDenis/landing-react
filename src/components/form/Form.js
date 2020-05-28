@@ -15,6 +15,7 @@ const Form = ({ data }) => {
 							key={item.id}
 							placeholder={item.placeholder}
 							text={item.text}
+							classN={item.classN}
 						/>
 					))}
 			</div>
