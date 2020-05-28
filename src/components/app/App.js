@@ -46,10 +46,10 @@ const App = () => {
 			<Section backgroundUrl={url} height={"670px"} shadow>
 				<Slider marginBottom={113}>{homepageSliderContent}</Slider>
 			</Section>
-			<Section isGreyBg height={"128.5vh"}>
+			<Section isGreyBg height={"fit-content"}>
 				<ServicesSection />
 			</Section>
-			<Section height={"90vh"}>
+			<Section height={"844px"}>
 				<AboutUs />
 			</Section>
 			<Section isGreyBg height={"630px"}>
@@ -62,7 +62,7 @@ const App = () => {
 					{clientSectionContent}
 				</Slider>
 			</Section>
-			<Section height={"92.9vh"}>
+			<Section height={"897px"}>
 				<SliderHeader subtitle="Отзывы" title="Ваши благодарности" />
 				<Slider blue marginBottom={130}>
 					{reviewsSectionContent}
