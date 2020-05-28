@@ -18,3 +18,33 @@
 		}
 	}
 }
+
+@media screen and (max-width: 958px) {
+	.nav__menu__item {
+		& + & {
+			margin-left: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.nav__menu__item {
+		& + & {
+			margin-left: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.nav {
+		padding: 0px 15px;
+		.nav__menu__link {
+			font-size: 12px;
+		}
+	}
+	.nav__menu__item {
+		& + & {
+			margin-left: 10px;
+		}
+	}
+}

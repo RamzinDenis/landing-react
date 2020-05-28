@@ -1,6 +1,5 @@
 .main {
 	width: 100%;
-	width: 100%;
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -22,4 +21,10 @@
 }
 .main_grey {
 	background-color: #ebebeb;
+}
+
+@media screen and (max-width: 1110px) {
+	.main__container {
+		padding: 0 15px;
+	}
 }

@@ -1,11 +1,11 @@
 .form {
 	flex-basis: 45%;
 	&__name {
-		display: flex;
+		display: inline-flex;
 		width: 100%;
 		justify-content: space-around;
+		gap: 30px;
 		label {
-			flex-basis: 45%;
 			margin-bottom: 130px;
 		}
 	}
