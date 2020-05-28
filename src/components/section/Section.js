@@ -30,7 +30,9 @@ const Section = ({
 				></div>
 			)}
 
-			<div className={styles.main__container}>{children}</div>
+			<div className={styles.main__container} style={{ minHeight: minHeight }}>
+				{children}
+			</div>
 		</section>
 	);
 };
